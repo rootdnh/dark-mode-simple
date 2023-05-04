@@ -17,7 +17,7 @@ input[type="checkbox"] {
   display: none
 }
 .bi {
-  font-size: 1.3rem;.
+  font-size: 1.3rem;
   cursor: pointer
 }
 
@@ -46,11 +46,93 @@ main {
   background-color: #fff;
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
 }
+.card-image,
+.card-details {
+  padding: 2rem;
+  width: 50%;
+}
 
+.card-image {
+  position: relative;
+  background-color: #eff7fc;
+  width: 50%;
+}
+
+.card-image span {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.card img {
+  width: 130%;
+  transform: rotate(-25deg);
+  position: absolute;
+  right: -1rem;
+  top: 10rem
+}
+
+.card-details h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.subtitle {
+  color: #444;
+  text-transform:  uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 1.8rem;
+  margin-bottom: 2rem;
+}
+.price-container {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.price {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.btn-buy {
+  background-color: #263238;
+  width: 7rem;
+  border: none;
+  border-radius: 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+
+}
 /* Dark theme */
 
 .dark,
 .dark header {
   background-color: #263238;
   color: white
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+.dark .card {
+  background-color: #37474f
+}
+.dark .card-image {
+  background-color: #273035;
+}
+.dark .subtitle{
+  color: #67b4f3;
+}
+.dark .description {
+  color: #2196f3;
+}
+.dark .btn-buy {
+  background-color: #67b4f3;
 }
